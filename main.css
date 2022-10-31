@@ -1,0 +1,533 @@
+/* TIPOS DE LETRA */
+
+@import url('https://fonts.googleapis.com/css2?family=Bayon&family=Ubuntu:wght@500&display=swap');
+
+/* 'Ubuntu' */
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+/* 'Play' */
+
+
+/* COR DE FUNDO E DE TEXTO */
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+
+/* MODO ESCURO */
+
+.light-mode {
+    background-color: #dadada;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+
+/* ajustes modo escuro à barra de navegação */
+
+.light-mode .topnav {
+    background-color: #dadada;
+    transition-duration: 0.4s;
+}
+
+.light-mode .topnav.responsive {
+    background-color: #d3d3d3;
+}
+
+.light-mode .topnav a {
+    color: #333;
+    transition-duration: 0.4s;
+    border-color: #7a7a7a;
+}
+
+.light-mode .topnav a:hover {
+    background-color: rgb(172, 172, 172);
+}
+
+
+/* ajustes modo escuro ao ícone da versão mobile */
+
+.light-mode a.icon {
+    filter: invert(100%);
+    transition-duration: 0.4s;
+}
+
+
+/* ajustes modo escuro a imagens específicas (inverte as cores da imagem) */
+
+.light-mode .invert {
+    filter: invert(100%);
+    transition-duration: 0.4s;
+}
+
+
+/* ajustes modo escuro aos cartões */
+
+.light-mode .card {
+    background-color: #ccc;
+    transition-duration: 0.4s;
+}
+
+.light-mode .card-guia {
+    background-color: #ccc;
+    transition-duration: 0.4s;
+}
+
+.light-mode .marcas {
+    background-color: #ccc;
+    transition-duration: 0.4s;
+}
+
+.light-mode .row a {
+    color: black;
+    transition-duration: 0.2s;
+}
+
+
+/* ajustes modo escuro ao texto */
+
+.light-mode h1 {
+    color: black;
+}
+
+.light-mode h2 {
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    transition-duration: 0.4s;
+}
+
+.light-mode h3 {
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.light-mode label {
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.light-mode input[type=text] {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: black;
+}
+
+
+/* ajustes modo escuro ao slideshow */
+
+.lightmode .dot {
+    color: black;
+    transition-duration: 0.4s;
+}
+
+.light-mode .slideshow-container {
+    border: 2px solid #ccc;
+    transition-duration: 0.4s;
+}
+
+
+/* ajustes modo escuro ao logotipo */
+
+.light-mode .logo {
+    filter: invert(100%);
+    transition-duration: 0.4s;
+}
+
+
+/* AJUSTES GERAIS TEXTO E IMAGEM */
+
+h1 {
+    font-family: 'Play';
+    text-align: center;
+}
+
+h1 img {
+    max-width: 100%;
+}
+
+.sobre {
+    color: rgb(255, 94, 0);
+    font-size: 60px;
+    transition-duration: 0.4s;
+}
+
+h2 {
+    font-family: 'Play';
+    color: white;
+}
+
+h3 {
+    font-family: 'Play';
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    font-family: 'Play';
+    color: white;
+}
+
+input[type=text] {
+    font-family: 'Play';
+}
+
+input[type=submit] {
+    font-family: 'Play';
+}
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.row a {
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+xxxx
+/* BARRA DE NAVEGAÇÃO */
+
+
+/* estilo geral */
+
+.topnav {
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+
+/* links da barra de navegação */
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 17px;
+    text-decoration: none;
+    font-size: 17.5px;
+    font-family: 'Ubuntu';
+}
+
+
+/* quando se passa o rato pelos links */
+
+.topnav a:hover {
+    background-color: #3d3d3d;
+    transition-duration: 0.4s;
+}
+
+
+/* quando estamos no link selecionado */
+
+.topnav a.active {
+    background-color: #006ea1;
+    color: black;
+}
+
+
+/* quando se passa o rato pelo ícone de menu (VERSÃO MOBILE) */
+
+.topnav a.icon:hover {
+    background-color: #F95738;
+    color: black;
+    transition-duration: 0.4s;
+}
+
+
+/* ajustes icone da versão mobile */
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav a.icon {
+    padding-bottom: 17px;
+}
+
+
+/* Checkout */
+
+.chk {
+    margin-left: 10px;
+}
+
+
+/* CARTÃO */
+
+
+/* ajustes gerais */
+
+.card {
+    float: left;
+    width: 26%;
+    background-color: #141313;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.349);
+    transition: 0.3s;
+    padding: 20px;
+    text-align: center;
+    display: table-cell;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-left: 4%;
+    height: 100%;
+}
+
+.marcas {
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    width: 40%;
+    background-color: #141313;
+    border-radius: 70px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.349);
+}
+
+
+/* quando se passa o rato no cartão */
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+.marcas:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+/* os cartões na página do Guia de Tamanhos têm propriedades diferentes */
+
+.card-guia {
+    float: left;
+    width: 18%;
+    background-color: #141313;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 35%);
+    transition: 0.3s;
+    padding: 20px;
+    text-align: center;
+    display: table-cell;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    margin-left: 4%;
+}
+
+
+/* quando se passa o rato no cartão da página dos guias */
+
+.card-guia:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+}
+
+
+/* conteúdo do cartão */
+
+.container {
+    padding: 10px 10px;
+}
+
+
+/* descrição */
+
+.description {
+    height: 250px;
+    overflow-y: auto;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* imagens dentro do cartão */
+
+.card img {
+    max-width: 300px;
+    border-radius: 15px;
+}
+
+
+/* ajustes á propriedade "row" dos cartões */
+
+.cincocols {
+    width: 20%;
+}
+
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+label {
+    color: rgb(255, 255, 255);
+}
+
+input[type=text] {
+    border-radius: 5px;
+    border-color: #333;
+    background-color: #333;
+    color: rgb(255, 255, 255);
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* barra de navegação e ícone versão mobile */
+
+@media screen and (max-width: 658px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .topnav.responsive {
+        position: relative;
+        background-color: #202020;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition-duration: 0.4s;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        transition-duration: 0.4s;
+    }
+}
+
+
+/* cartões */
+
+@media only screen and (max-width:768px) {
+    .card {
+        width: 50%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .card-guia {
+        width: 50%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .marcas {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width:523px) {
+    .card {
+        width: 100%;
+    }
+    .card-guia {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:596px) {
+    .marcas {
+        width: 100%;
+    }
+}
+
+
+/* BARRA DE DESLOCAMENTO (scroll bar) */
+
+ ::-webkit-scrollbar {
+    width: 10px;
+}
+
+ ::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background-color: #d6dee17a;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background-color: #a8bbbf7c;
+}
+
+
+/*SLIDESHOW*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* container */
+
+.slideshow-container {
+    max-width: 75%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 70px;
+    border: 1px solid rgb(53, 53, 53);
+}
+
+
+/* propriedade mySlides */
+
+.mySlides {
+    display: none;
+}
+
+
+/* animação de desvanecer */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
